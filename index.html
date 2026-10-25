@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Para'r Pagla — Desi Chaos</title>
+  <meta name="color-scheme" content="dark"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading"><div class="loader"></div><h1>PARA'R PAGLA</h1><p>Loading para…</p></div>
+  <div id="game-ui">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">PP</span><div><strong>PARA'R PAGLA</strong><small>DESI CHAOS • PROTOTYPE 0.1</small></div></div>
+      <div class="stats"><span>৳ <b id="cash">120</b></span><span>CHAOS <b id="chaos">0</b></span></div>
+    </header>
+    <section class="mission-card">
+      <div class="eyebrow">CURRENT MISSION</div>
+      <h2 id="mission-title">Fuchka Fiasco</h2>
+      <p id="mission-text">Find the fuchka stall and press E / INTERACT.</p>
+      <div class="mission-progress"><span id="mission-progress"></span></div>
+    </section>
+    <div class="help-chip" id="hint">WASD move · Mouse drag camera · E interact · Shift run</div>
+    <div id="toast" role="status"></div>
+    <div class="crosshair">+</div>
+    <div class="bottom-ui">
+      <div class="location"><span class="pulse"></span><span id="location-name">PARA BAZAAR</span></div>
+      <button id="interact-btn">INTERACT</button>
+    </div>
+    <div class="mobile-controls">
+      <div class="dpad">
+        <button data-move="forward">▲</button>
+        <div><button data-move="left">◀</button><button data-move="back">▼</button><button data-move="right">▶</button></div>
+      </div>
+      <div class="mobile-actions"><button id="run-btn">RUN</button><button id="mobile-interact">DO IT!</button></div>
+    </div>
+    <div class="mission-list">
+      <button data-mission="0" class="active">01 Para Pagla</button>
+      <button data-mission="1">02 Rickshaw Rush</button>
+      <button data-mission="2">03 Last Bench</button>
+      <button data-mission="3">04 Biye Bari</button>
+      <button data-mission="4">05 Chagol Attack</button>
+    </div>
+  </div>
+  <div id="dialog" class="dialog hidden"><div class="dialog-inner"><span class="dialog-label">PARA TRANSMISSION</span><p id="dialog-text"></p><button id="dialog-close">THIK ACHE!</button></div></div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
